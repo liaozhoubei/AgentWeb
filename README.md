@@ -7,6 +7,8 @@
 
 此项目将 AgentWeb 迁移至 androidx 库，同时将 com.download.library:Downloader 放置在 downloader 文件夹下，同样将其迁移至 androidx, 其他跟原项目一致，没其他了。
 
+如果想使用 androidx 版本的 AgentWeb ， 需要自行下载编译，并且手动生成依赖包添加到自己的项目中。
+
 ## AgentWeb 介绍  [English](./README-ENGLISH.md)
 
 AgentWeb 是一个基于的 Android WebView ，极度容易使用以及功能强大的库，提供了 Android WebView 一系列的问题解决方案 ，并且轻量和极度灵活，体验请下载的 
@@ -15,16 +17,7 @@ AgentWeb 是一个基于的 Android WebView ，极度容易使用以及功能强
 详细使用请参照上面的 Sample 。
 	
 
-## 引入
 
-
-* Gradle 
-   
-   ```
-    api 'com.just.agentweb:agentweb:4.1.2' // (必选)
-    api 'com.just.agentweb:filechooser:4.1.2'// (可选)
-    api 'com.download.library:Downloader:4.1.2'// (可选)
-   ```
 
 ## 相关
 * [AgentWebX5](https://github.com/Justson/AgentWebX5)
