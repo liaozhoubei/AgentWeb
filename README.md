@@ -5,7 +5,7 @@
 
 ## 写在前面
 
-此项目将 AgentWeb 迁移至 androidx 库，同时将 com.download.library:Downloader 放置在 downloader 文件夹下，同样将其迁移至 androidx, 其他跟园项目一致，没其他了。
+此项目将 AgentWeb 迁移至 androidx 库，同时将 com.download.library:Downloader 放置在 downloader 文件夹下，同样将其迁移至 androidx, 其他跟原项目一致，没其他了。
 
 ## AgentWeb 介绍  [English](./README-ENGLISH.md)
 
