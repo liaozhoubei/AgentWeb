@@ -1,5 +1,6 @@
 ![](./img/logo.png)
 
+This project migrate to androidx. otherwise, it move com.download.library:Downloader to downloader Folder, it migrate to androidx too.  If you want to use this project, you need compile by youself and add lib on your project.
 
 ## Introduction to AgentWeb
 
@@ -13,17 +14,6 @@ AgentWeb Sample shows AgentWeb library powerful features, detailed link, please 
 
 * [Download AgentWeb](./agentweb.apk)
 * [Google Play](https://play.google.com/store/apps/details?id=com.just.agentweb.sample) 
-
-## download
-
-
-* Gradle 
-  
-   ```
-    api 'com.just.agentweb:agentweb:4.1.2' // (Required)
-    api 'com.just.agentweb:filechooser:4.1.2'// (optional)
-    api 'com.download.library:Downloader:4.1.2'// (optional)
-   ```
 	
 	
 ## use
