@@ -3,6 +3,10 @@
       <img src="./img/logo.png"></img>
 </div>
 
+## 写在前面
+
+此项目将 AgentWeb 迁移至 androidx 库，同时将 com.download.library:Downloader 放置在 downloader 文件夹下，同样将其迁移至 androidx, 其他跟园项目一致，没其他了。
+
 ## AgentWeb 介绍  [English](./README-ENGLISH.md)
 
 AgentWeb 是一个基于的 Android WebView ，极度容易使用以及功能强大的库，提供了 Android WebView 一系列的问题解决方案 ，并且轻量和极度灵活，体验请下载的 

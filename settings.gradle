@@ -1,1 +1,1 @@
-include ':sample', ':agentweb-core',  ':agentweb-filechooser'
+include ':sample', ':agentweb-core',  ':agentweb-filechooser','downloader'

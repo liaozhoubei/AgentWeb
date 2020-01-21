@@ -36,14 +36,16 @@ import android.os.Looper;
 import android.os.StatFs;
 import android.provider.DocumentsContract;
 import android.provider.MediaStore;
-import android.support.annotation.ColorInt;
-import android.support.annotation.NonNull;
-import android.support.design.widget.Snackbar;
-import android.support.v4.app.AppOpsManagerCompat;
-import android.support.v4.content.ContextCompat;
-import android.support.v4.content.CursorLoader;
-import android.support.v4.content.FileProvider;
-import android.support.v4.os.EnvironmentCompat;
+import androidx.annotation.ColorInt;
+import androidx.annotation.NonNull;
+
+import androidx.core.app.AppOpsManagerCompat;
+import androidx.core.content.ContextCompat;
+
+import androidx.core.content.FileProvider;
+import androidx.core.os.EnvironmentCompat;
+import androidx.loader.content.CursorLoader;
+
 import android.telephony.TelephonyManager;
 import android.text.SpannableString;
 import android.text.Spanned;
@@ -59,6 +61,8 @@ import android.webkit.WebChromeClient;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.widget.Toast;
+
+import com.google.android.material.snackbar.Snackbar;
 
 import org.json.JSONArray;
 import org.json.JSONException;

@@ -18,8 +18,10 @@ package com.just.agentweb;
 
 import android.annotation.TargetApi;
 import android.os.Build;
-import android.support.v4.util.ArrayMap;
+
 import android.webkit.WebView;
+
+import androidx.collection.ArrayMap;
 
 
 /**
@@ -45,7 +47,7 @@ public class WebSecurityLogicImpl implements WebSecurityCheckLogic {
     }
 
     @Override
-    public void dealJsInterface(ArrayMap<String, Object> objects,AgentWeb.SecurityType securityType) {
+    public void dealJsInterface(ArrayMap<String, Object> objects, AgentWeb.SecurityType securityType) {
         if (securityType== AgentWeb.SecurityType.STRICT_CHECK
                 &&AgentWebConfig.WEBVIEW_TYPE!=AgentWebConfig.WEBVIEW_AGENTWEB_SAFE_TYPE
                 &&Build.VERSION.SDK_INT < Build.VERSION_CODES.JELLY_BEAN_MR1) {

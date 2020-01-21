@@ -12,13 +12,15 @@ import android.graphics.RectF;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.SystemClock;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.DefaultItemAnimator;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
-import android.support.v7.widget.Toolbar;
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
+
+import androidx.appcompat.widget.Toolbar;
+import androidx.recyclerview.widget.DefaultItemAnimator;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -298,7 +300,7 @@ public class NativeDownloadActivity extends AppCompatActivity {
                         } else {
                             nativeDownloadViewHolder.mStatusButton.setText("出错");
                         }
-                        Toast.makeText(NativeDownloadActivity.this, downloadException.getMsg(), 1).show();
+                        Toast.makeText(NativeDownloadActivity.this, downloadException.getMsg(), Toast.LENGTH_LONG).show();
                     }
                     return super.onResult(throwable, uri, url, extra);
                 }

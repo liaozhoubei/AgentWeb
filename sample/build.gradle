@@ -9,7 +9,7 @@ android {
         targetSdkVersion TARGET_SDK_VERSION.toInteger()
         versionCode 4
         versionName "4.1.2"
-        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
     signingConfigs {
         release {
@@ -49,18 +49,20 @@ android {
 
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
-    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+    androidTestCompile('androidx.test.espresso:espresso-core:3.1.0', {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
-    compile "com.android.support:appcompat-v7:${SUPPORT_LIB_VERSION}"
-    compile "com.android.support:design:${SUPPORT_LIB_VERSION}"
+    compile 'androidx.appcompat:appcompat:1.0.0'
+    compile 'com.google.android.material:material:1.0.0'
     //    compile "com.android.support:support-v4:${SUPPORT_LIB_VERSION}"
     testCompile 'junit:junit:4.12'
 //    compile project(':agentweb-core')
 //    compile project(':agentweb-filechooser')
-    implementation'com.download.library:Downloader:4.1.2'
-    implementation 'com.just.agentweb:agentweb:4.1.2'
-    implementation 'com.just.agentweb:filechooser:4.1.2'
+//    implementation 'com.just.agentweb:agentweb:4.1.2'
+//    implementation 'com.just.agentweb:filechooser:4.1.2'
+    implementation project(path: ':downloader')
+    implementation project(path: ':agentweb-filechooser')
+    implementation project(path: ':agentweb-core')
     debugCompile 'com.squareup.leakcanary:leakcanary-android:1.5.1'
     releaseCompile 'com.squareup.leakcanary:leakcanary-android-no-op:1.5.1'
     testCompile 'com.squareup.leakcanary:leakcanary-android-no-op:1.5.1'
@@ -74,4 +76,5 @@ dependencies {
     implementation 'com.tencent.sonic:sdk:2.0.0'
     implementation 'com.coolindicator.sdk:coolindicator:1.0.0-beta'
     implementation 'com.squareup.picasso:picasso:2.71828'
+
 }
